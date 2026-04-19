@@ -47,7 +47,7 @@ The Minecraft server listens on port **25565**. In cloud/notebook environments y
 | Question | Answer |
 |---|---|
 | **Where are my worlds?** | `MinecraftServers/<name>/world/` |
-| **How do I increase RAM?** | Edit `-Xmx2G` / `-Xms512M` in `JVM_FLAGS_COMMON` (Cell 2) |
+| **How do I change RAM?** | RAM is auto-detected (75% of system memory, max 8 GB). Override by editing `_detect_ram()` in Cell 2 |
 | **How do I install plugins?** | Drop `.jar` files into `MinecraftServers/<name>/plugins/`, then restart |
 | **online-mode=false?** | Lets non-premium accounts join. Change it in Cell 4 |
 | **Multiple servers?** | Create each with a different name and set a different `server-port` in Cell 4 |
